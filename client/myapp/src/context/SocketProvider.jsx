@@ -10,7 +10,7 @@ export const useSocket = () => {
 
 const SocketProvider = (props) => {
 
-    const socket = useMemo(()=>io('localhost:8000',[]))
+    const socket = useMemo(()=>io('https://theconference-server.onrender.com',[]))
 
   return (
     <div>
